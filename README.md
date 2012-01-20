@@ -3,7 +3,7 @@ _pronunciation: "heckle"_
 
 Authored by: Brian McMurray (bmcmurray) and Steven Merrill (smerrill)
 
-Hekyll is a presentation generator that uses Jekyll and Impress.js to create awesome presentations. You write Markdown files, which get turned into individual slides for an Impress.js presentation.
+Hekyll is a presentation generator that uses [Jekyll](https://github.com/mojombo/jekyll) and [Impress.js](https://github.com/bartaz/impress.js) to create awesome presentations. You write [Markdown](http://daringfireball.net/projects/markdown/syntax) files, which get turned into individual slides for an Impress.js presentation.
 
 ## Design Goals
 
