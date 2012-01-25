@@ -91,11 +91,14 @@ a {
   padding: 0 0.1em;
   background: rgba(231, 232, 225, 0.5);
   border-radius: 0.2em;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
+  -moz-transition-property: background;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
 
 a:hover {
   background: #e7e8e1; }
@@ -109,10 +112,9 @@ h1 {
 .step {
   width: 900px;
   padding: 40px;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Myriad Pro", Myriad, Arial, "Helvetica", Helvetica, Geneva, sans-serif;
   font-size: 48px;
@@ -120,11 +122,10 @@ h1 {
 
 /* fade out inactive slides */
 .step {
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -ms-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s; }
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
 
 .step:not(.active) {
   opacity: 0.3; }
@@ -185,14 +186,12 @@ h1 {
   border-radius: 10px;
   border: 1px solid #E4C652;
   background: #EEDC94; }
-
-.fallback-message p {
-  margin-bottom: 10px; }
+  .fallback-message p {
+    margin-bottom: 10px; }
 
 .impress-not-supported .step {
   position: relative;
   opacity: 1;
   margin: 20px auto; }
-
 .impress-not-supported .fallback-message {
   display: block; }
