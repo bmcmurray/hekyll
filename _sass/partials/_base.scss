@@ -1,0 +1,86 @@
+// Compass
+//   - Install: sudo gem install compass
+//   - Docs: http://compass-style.org/
+//   - Source: https://github.com/chriseppstein/compass
+
+// Imports -------------------------------------------------------------------
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+
+// Partials.
+@import "partials/variables";
+//@import "partials/elements";
+
+// Font Size Reference (12px base)
+//------------------------------------------------------------------------------
+//    6px   |   0.5em     |   50%     |   5pt
+//    7px   |   0.583em   |   58.3%   |   5pt
+//    8px   |   0.667em   |   66.7%   |   6pt
+//    9px   |   0.75em    |   75%     |   7pt
+//    10px  |   0.833em   |   83.3%   |   8pt
+//    11px  |   0.917em   |   91.7%   |   8pt
+//    12px  |   1em       |   100%    |   9pt
+//    13px  |   1.083em   |   108.3%  |   10pt
+//    14px  |   1.167em   |   116.7%  |   11pt
+//    15px  |   1.25em    |   125%    |   11pt
+//    16px  |   1.333em   |   133.3%  |   12pt
+//    17px  |   1.417em   |   141.7%  |   13pt
+//    18px  |   1.5em     |   150%    |   14pt
+//    19px  |   1.583em   |   158.3%  |   14pt
+//    20px  |   1.667em   |   166.7%  |   15pt
+//    21px  |   1.75em    |   175%    |   16pt
+//    22px  |   1.833em   |   183.3%  |   17pt
+//    23px  |   1.917em   |   191.7%  |   17pt
+//    24px  |   2em       |   200%    |   18pt
+
+//    40px  |   3.333em   |   200%    |   18pt // content padding
+
+
+
+// Hide elements from all users.
+//------------------------------------------------------------------------------
+// Used for elements which should not be immediately displayed to any user.
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+// Visually hidden, but available for screen readers.
+//------------------------------------------------------------------------------
+// Used for information required for screen-reader users to understand and use
+// the site where visual display is undesirable. Information provided in this
+// manner should be kept concise, to avoid unnecessary burden on the user.
+// "!important" is used to prevent unintentional overrides.
+
+.invisible,
+.element-invisible {
+  border: 0;
+  clip: rect(1px 1px 1px 1px); // IE6, IE7
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+
+// Visually hidden, but available to screenreaders and keyboard navigation.
+//------------------------------------------------------------------------------
+// The .element-focusable class extends the .element-invisible class to allow
+// the element to be focusable when navigated to via the keyboard. This is
+// typically used for skip links.
+
+.invisible.focusable:active,
+.invisible.focusable:focus,
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static !important;
+  width: auto;
+}
