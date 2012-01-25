@@ -464,6 +464,10 @@ a:hover {
     white-space: nowrap;
 }
 
+.slide p {
+  margin: 15px 0;
+}
+
 
 /* IMPRESS NOT SUPPORTED STYLES */
 
