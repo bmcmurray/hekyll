@@ -168,12 +168,16 @@ h1 {
   font-size: 50px;
   line-height: 72px;
   margin-top: 100px; }
-
 .slide q strong {
   white-space: nowrap; }
-
 .slide p {
   margin: 1.25em 0; }
+.slide h1 {
+  line-height: 100%; }
+.slide ul, .slide p, .slide h2, .slide h3, .slide h4, .slide h5, .slide h6 {
+  margin-top: 1em; }
+.slide li {
+  margin: 0 0 0.5em; }
 
 /* IMPRESS NOT SUPPORTED STYLES */
 .fallback-message {
@@ -195,3 +199,8 @@ h1 {
   margin: 20px auto; }
 .impress-not-supported .fallback-message {
   display: block; }
+
+/* PRINT STYLES */
+@media print {
+  .step {
+    page-break-after: always; } }
