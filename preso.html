@@ -6,6 +6,6 @@ title: Hekyll Presentation Generator
 {% for post in site.posts reversed %}
   {% include slide.html %}
 {% endfor %}
-{% if site.overview.enabled %}
-<div id="overview" class="step" data-x="{{ site.overview.x }}" data-y="{{ site.overview.y }}" data-scale="{{ site.overview.scale }}"></div>
+{% if site.overview %}
+<div id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></div>
 {% endif %}
