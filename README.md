@@ -14,6 +14,17 @@ Hekyll should:
 - Allow users to commit and publish their presentations through GitHub using GitHub Pages.
 - Provide a good print stylesheet so that a user can print to PDF when conferences ask for slide decks.
 
+## How to Use Hekyll
+
+1. Download and install Jekyll.
+2. Download or clone the Hekyll repository.
+3. Configure options in _config.yml
+4. Create a new Markdown file for each slide in ``_posts``. Use the ``post_template.md`` as a starting point. Be sure to name each file with a date, just like Jekyll.
+
+## Requirements
+
+- Jekyll
+
 ## Acknowledgements
 
 This project stands on the shoulders of giants and would not be possible without these projects:

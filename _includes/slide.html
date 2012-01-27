@@ -1,5 +1,5 @@
-<div class="step slide" {% for attr in post.data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}>
-  {{ post.title }}
+<div class="step{%if post.classes | size %}{% for class in post.classes %} {{class}}{% endfor %}{% else %} slide{% endif %}" {% for attr in post.data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}>
+  {% if post.title != "" %}<h1>{{ post.title }}</h1>{% endif %}
 
   {{ post.content }}
 </div>
