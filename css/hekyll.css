@@ -199,3 +199,8 @@ h1 {
   margin: 20px auto; }
 .impress-not-supported .fallback-message {
   display: block; }
+
+/* PRINT STYLES */
+@media print {
+  .step {
+    page-break-after: always; } }

@@ -170,3 +170,10 @@ h1 {
     display: block;
   }
 }
+
+/* PRINT STYLES */
+@media print {
+  .step {
+    page-break-after: always;
+  }
+}
