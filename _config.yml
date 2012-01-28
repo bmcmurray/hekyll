@@ -2,7 +2,9 @@ pygments: true
 permalink: "/:title"
 
 ## Hekyll Configuration ##
-overview: true # true/false -- enabling this will add an overview slide at the end of the presentation
+simple-slideshow: false  # true/false -- when enabled, slide positioning is ignored and a simple cross-fade will be used to transition between slides.
+
+overview: true # true/false -- enabling this will add an overview slide at the end of the presentation. The overview slide will not display if simple-slideshow, above, is enabled.
 overview-data:
   x: 1000  # integer -- set this to the center x point of the overview slide, usually the center of your slide canvas area
   y: 1000  # integer -- set this to the center y point of the overview slide, usually the center of your slide canvas area
