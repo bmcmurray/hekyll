@@ -3,7 +3,7 @@
 <head>
   {% include head.html %}
 </head>
-<body>
+<body{% if site.simple-slideshow %} class="simple-slideshow"{% endif; %}>
   <div id="impress" class="impress-not-supported">
     {{ content }}
   </div>
