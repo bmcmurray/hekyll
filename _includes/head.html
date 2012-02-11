@@ -3,4 +3,8 @@
 <meta name="author" content="" />
 <meta name="description" content="">
 
-<link href="css/hekyll.css" rel="stylesheet" />
+{% if site.theme %}
+<link href="css/themes/{{site.theme}}/{{site.theme}}.css" rel="stylesheet" />
+{% else %}
+<link href="css/themes/hekyll/hekyll.css" rel="stylesheet" />
+{% endif %}
