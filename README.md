@@ -35,3 +35,6 @@ This project stands on the shoulders of giants and would not be possible without
 - [Jekyll](https://github.com/mojombo/jekyll)
 - [GitHub Pages](http://pages.github.com/)
 
+## History of Hekyll
+
+[Read the creation story of Hekyll on my blog.](http://brianmcmurray.com/blog/2012/02/07/hekyll-for-awesome-easy-presentations/)
