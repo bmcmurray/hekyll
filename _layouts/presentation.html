@@ -3,12 +3,13 @@
 <head>
   {% include head.html %}
 </head>
-<body{% if site.simple-slideshow %} class="simple-slideshow"{% endif; %}>
-  <div id="impress" class="impress-not-supported">
+<body{% if site.simple-slideshow %} class="simple-slideshow"{% endif; %} class="impress-not-supported">
+  <div id="impress">
     {{ content }}
   </div>
+  <script type="text/javascript" src="js/impress.min.js"></script>
   <a href="http://github.com/bmcmurray/hekyll"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/6429057dfef9e98189338d22e7f6646c6694f032/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub"></a>
-  <script type="text/javascript" src="impress.js"></script>
+  <script>impress().init();</script>
 </body>
 </html>
 
