@@ -8,6 +8,11 @@
 @import "compass/utilities";
 @import "compass/css3";
 
+// reset the list-style reset
+ol, ul {
+  list-style: disc;
+}
+
 // Partials.
 @import "variables";
 //@import "partials/elements";
