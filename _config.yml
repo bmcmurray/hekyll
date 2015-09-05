@@ -1,16 +1,31 @@
 highlighter: pygments
 permalink: "/:title"
 
-## Hekyll Configuration ##
-theme: "hekyll" # add the name of a theme. Your theme's name should also be the name of the css file. (e.g. "hekyll" will be /css/themes/hekyll/hekyll.css).
+# Meta tags
+author: https://github.com/peterhil/impressionist/
+description: Impressionist uses Jekyll and Impress.js to help you make impressive presentations
 
-simple-slideshow: false  # true/false -- when enabled, slide positioning is ignored and a simple cross-fade will be used to transition between slides.
+# Name of a theme to use. The theme's name should also be the name of the css
+# file. (e.g. "hekyll" will be /css/themes/hekyll/hekyll.css).
+# theme: "hekyll"
 
-overview: true # true/false -- enabling this will add an overview slide at the end of the presentation. The overview slide will not display if simple-slideshow, above, is enabled.
+# When enabled, slide positioning is ignored and a simple cross-fade will be
+# used to transition between slides.
+simple-slideshow: false  # true/false
+
+# Add an overview slide at the end of the presentation. The overview
+# slide will not display if simple-slideshow, above, is enabled.
+overview: true  # true/false
+
 overview-data:
   x: 1000  # integer -- set this to the center x point of the overview slide, usually the center of your slide canvas area
   y: 1000  # integer -- set this to the center y point of the overview slide, usually the center of your slide canvas area
   scale: 10  # integer -- set the scale of the overview slide, usually far enough back to fit everything in view
 
-exclude: ['bower_components', 'node_modules', '_img',
-          'config.rb', 'bower.json', 'package.json', 'Gemfile', 'Gemfile.lock', 'Gruntfile.js']
+exclude:
+    - node_modules
+    - config.rb
+    - bower.json
+    - package.json
+    - Gemfile*
+    - Gruntfile.js
