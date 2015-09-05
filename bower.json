@@ -1,0 +1,24 @@
+{
+  "name": "hekyll",
+  "version": "1.0.0",
+  "homepage": "https://github.com/flibbertigibbet/hekyll",
+  "authors": [
+    "Brian McMurray (bmcmurray)",
+    "Steven Merrill (smerrill)",
+    "Kathryn Killebrew (flibbertigibbet)"
+  ],
+  "description": "Presentation using Hekyll",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_site",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "impress.js": "~0.5.3"
+  }
+}
