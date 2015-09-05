@@ -4,7 +4,8 @@
   "description": "Presentation generator using Jekyll and impress.js",
   "main": "index.js",
   "dependencies": {
-    "bower": "^1.5.2"
+    "bower": "^1.5.2",
+    "jade": "^1.11.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
