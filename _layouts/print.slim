@@ -1,12 +1,7 @@
-<!doctype html>
-<html>
-<head>
-  {% include head.html %}
-</head>
-<body>
-  <div id="impress" class="impress-not-supported">
-    {{ content }}
-  </div>
-</body>
-</html>
-
+doctype html
+html
+  head
+    - include 'head.slim'
+  body
+    #impress.impress-not-supported
+      = content

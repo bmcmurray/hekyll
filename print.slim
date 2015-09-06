@@ -3,10 +3,8 @@ layout: print
 title: Hekyll Presentation Generator
 ---
 
-{% for post in site.posts reversed %}
-  {% include slide.html %}
-  <div class="page-break"></div>
-{% endfor %}
-{% if site.overview %}
-<div id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></div>
-{% endif %}
+- for post in site.posts.reverse
+  - include slide.slim
+  .page-break
+- if site.overview
+  #overview.step{:data site.overview-data}
