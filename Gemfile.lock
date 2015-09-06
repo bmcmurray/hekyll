@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/slim-template/slim.git
+  revision: 9152737d75a38d1ff655f2fd32a3234dab62f278
+  specs:
+    slim (3.0.6)
+      temple (~> 0.7.6)
+      tilt (>= 1.3.3, < 2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -95,6 +103,9 @@ GEM
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
     jekyll-sitemap (0.8.1)
+    jekyll-slim (0.8.2)
+      jekyll (>= 0.10.0)
+      slim
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     jemoji (0.5.0)
@@ -130,8 +141,10 @@ GEM
     redcarpet (3.3.2)
     safe_yaml (1.0.4)
     sass (3.4.18)
+    temple (0.7.6)
     terminal-table (1.5.2)
     thread_safe (0.3.5)
+    tilt (2.0.1)
     timers (4.0.4)
       hitimes
     toml (0.1.2)
@@ -148,8 +161,10 @@ PLATFORMS
 DEPENDENCIES
   compass (= 1.0.3)
   github-pages (= 39)
+  jekyll-slim
   json
   multi_json (= 1.7.8)
+  slim!
 
 BUNDLED WITH
    1.10.6

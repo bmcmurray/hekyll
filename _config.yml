@@ -1,6 +1,10 @@
 highlighter: pygments
 permalink: "/:title"
 
+slim:
+  pretty: true
+  format: html5
+
 # Meta tags
 author: https://github.com/peterhil/impressionist/
 description: Impressionist uses Jekyll and Impress.js to help you make impressive presentations
