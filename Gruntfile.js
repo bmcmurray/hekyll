@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         clean: {
             dist: {
                 dot: true,
-                src: ["!css/**", "css/*", "!*/syntax.css", "js/*", "img/*"]
+                src: ["!css/**", "css/*", "!*/syntax.css", "js/*", "img/*", "!img/favicon.png", "!img/apple-touch-icon.png"]
             }
         },
         compass: {                  // Task
