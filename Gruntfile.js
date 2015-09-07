@@ -33,20 +33,28 @@ module.exports = function(grunt) {
                 tasks: ['compass']
             }
         },
+        cssmin: {
+            dist: {
+                files: {
+                    'dist/impress.js/css/impress.min.css': ['vendor/impress.js/css/impress-demo.css']
+                }
+            }
+        },
         uglify: {
             dist: {
               files: {
-                'js/impress.min.js': ['bower_components/impress.js/js/impress.js']
+                'dist/impress.js/js/impress.min.js': ['vendor/impress.js/js/impress.js']
               }
             }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['clean:dist', 'compass', 'uglify', 'imagemin']);
-    grunt.registerTask('update', ['newer:compass', 'newer:uglify', 'newer:imagemin']);
+    grunt.registerTask('default', ['clean:dist', 'compass', 'cssmin', 'uglify', 'imagemin']);
+    grunt.registerTask('update', ['newer:compass', 'newer:cssmin', 'newer:uglify', 'newer:imagemin']);
 };
