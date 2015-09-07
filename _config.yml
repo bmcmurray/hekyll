@@ -33,3 +33,4 @@ exclude:
     - package.json
     - Gemfile*
     - Gruntfile.js
+    - divshot.json
