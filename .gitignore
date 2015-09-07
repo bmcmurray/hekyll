@@ -11,3 +11,4 @@ node_modules/
 bower_components/
 !css/syntax.css
 /vendor/
+.divshot-cache/

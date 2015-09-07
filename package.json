@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bower": "^1.5.2",
+    "divshot-cli": "^1.10.5",
     "jade": "^1.11.0"
   },
   "devDependencies": {
