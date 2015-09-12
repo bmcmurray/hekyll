@@ -1,7 +1,9 @@
+ruby: require 'slim/include'
+
 doctype html
 html
   head
-    - include 'head.slim'
+    include _includes/head
   body
     #impress.impress-not-supported
       = content
