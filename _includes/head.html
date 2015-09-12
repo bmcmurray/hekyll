@@ -1,0 +1,23 @@
+<meta charset="utf-8" />
+<meta content="width=1024" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+
+{% if page.title %}
+<title>{{page.title}}</title>
+{% else %}
+<title>slide</title>
+{% endif %}
+
+<meta content="{{site.author}}" name="author" />
+<meta content="{{site.description}}" name="description" />
+
+{% if site.theme %}
+<link href="css/themes/{{site.theme}}/{{site.theme}}.css" rel="stylesheet" />
+{% else %}
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+<link href="dist/impress.js/css/impress.min.css" rel="stylesheet" />
+{% endif %}
+
+<link href="css/syntax.css" rel="stylesheet" />
+<link href="img/favicon.png" rel="shortcut icon" />
+<link href="img/apple-touch-icon.png" rel="apple-touch-icon" />

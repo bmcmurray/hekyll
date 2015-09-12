@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body{% if site.simple-slideshow %} class="simple-slideshow"{% endif; %}>
+        <div class="fallback-message">
+            <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
+        <div id="impress" class="impress-not-supported">
+            {{ content }}
+        </div>
+
+        <div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+        </div>
+        <a class="github-badge" href="https://github.com/peterhil/impressionist" style="pointer-events: auto; position: fixed; top: 0; left: 0; border: none; background: none;">
+            <img alt="Fork me on GitHub"
+                 width="100" height="100"
+                 data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"
+                 src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67"
+            />
+        </a>
+        <script>
+         if ("ontouchstart" in document.documentElement) {
+             document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+         }
+        </script>
+        <script src="dist/impress.js/js/impress.min.js"></script>
+        <script>impress().init()</script>
+        </div>
+    </body>
+</html>
