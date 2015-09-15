@@ -21,7 +21,15 @@
          }
         </script>
         <script src="dist/impress.js/js/impress.min.js"></script>
-        <script>impress().init()</script>
+        <script>
+         impress().init();
+         document.body.addEventListener('keyup', function(event){
+             if (event.keyCode == 27) {
+                 console.log('Overview');
+                 document.location.hash = '#/overview';
+             }
+         });
+        </script>
         </div>
     </body>
 </html>
