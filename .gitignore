@@ -9,6 +9,8 @@ _site/
 
 node_modules/
 bower_components/
-!css/syntax.css
+/css/
+!/css/syntax.css
+/img/
 /vendor/
 .divshot-cache/
